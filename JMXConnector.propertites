@@ -1,0 +1,31 @@
+#PID  #static 1st column
+
+# http://www.ibm.com/support/knowledgecenter/ja/SSEQTP_8.5.5/com.ibm.websphere.wlp.doc/ae/rwlp_mon_connectionpools.html
+WebSphere:type=ConnectionPoolStats,name=jdbc/CIRIUS-DS1 CreateCount
+WebSphere:type=ConnectionPoolStats,name=jdbc/CIRIUS-DS1 DestroyCount
+WebSphere:type=ConnectionPoolStats,name=jdbc/CIRIUS-DS1 ConnectionHandleCount
+WebSphere:type=ConnectionPoolStats,name=jdbc/CIRIUS-DS1 ManagedConnectionCount
+WebSphere:type=ConnectionPoolStats,name=jdbc/CIRIUS-DS1 WaitTime
+WebSphere:type=ConnectionPoolStats,name=jdbc/CIRIUS-DS1 FreeConnectionCount
+
+# https://www.ibm.com/support/knowledgecenter/ja/SSAW57_8.5.5/com.ibm.websphere.wlp.doc/ae/rwlp_mon_jvm.html
+WebSphere:type=JvmStats UsedMemory
+WebSphere:type=JvmStats FreeMemory
+WebSphere:type=JvmStats Heap
+WebSphere:type=JvmStats UpTime
+WebSphere:type=JvmStats ProcessCPU
+WebSphere:type=JvmStats GcCount
+WebSphere:type=JvmStats GcTime
+
+# http://www.ibm.com/support/knowledgecenter/ja/SSEQTP_8.5.5/com.ibm.websphere.wlp.doc/ae/rwlp_mon_sessionstats.html
+WebSphere:type=SessionStats,name=default_host/AsyncTestPublisher ActiveCount
+WebSphere:type=SessionStats,name=default_host/AsyncTestPublisher LiveCount
+WebSphere:type=SessionStats,name=default_host/AsyncTestPublisher CreateCount
+WebSphere:type=SessionStats,name=default_host/AsyncTestPublisher InvalidatedCountbyTimeout
+WebSphere:type=SessionStats,name=default_host/AsyncTestPublisher InvalidatedCount
+
+WebSphere:type=SessionStats,name=default_host/dbtest ActiveCount
+WebSphere:type=SessionStats,name=default_host/dbtest LiveCount
+WebSphere:type=SessionStats,name=default_host/dbtest CreateCount
+WebSphere:type=SessionStats,name=default_host/dbtest InvalidatedCountbyTimeout
+WebSphere:type=SessionStats,name=default_host/dbtest InvalidatedCount

@@ -1,0 +1,8 @@
+#Organize Import Order
+#Fri Apr 03 14:12:20 JST 2015
+5=javax
+4=java
+3=lombok
+2=org
+1=com
+0=jp.co
